@@ -1,3 +1,5 @@
+/*CSS Reset*/
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -18,7 +20,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -47,13 +49,20 @@ table {
 	border-spacing: 0;
 }
 
+
+
+/*Styling*/
+
 * {
     box-sizing: border-box;
+    /* border: 2px solid blue; */
+    
 }
 
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 h1, h2, h3, h4, h5 {
@@ -69,6 +78,35 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+    padding: 3% 3% 0 3%;
+}
+
+#logo {
+    width: 20%;
+    padding: 0 1% 2% 2%;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#banner img{
+    max-width: 100%;
+    margin: 2% auto;
 }
 
 .top-content {
@@ -88,6 +126,7 @@ p {
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    
 }
 
 .middle-content h2 {
@@ -112,6 +151,38 @@ p {
     justify-content: center;
 }
 
+#box1 {
+    background-color: teal;
+}
+#box2 {
+    background-color: gold;
+}
+#box3 {
+    background-color:cadetblue;
+}
+#box4 {
+    background-color: coral;
+}
+#box5 {
+    background-color: crimson;
+}
+#box6 {
+    background-color: forestgreen;
+}
+#box7 {
+    background-color: darkorchid;
+}
+#box8 {
+    background-color: hotpink;
+}
+#box9 {
+    background-color: indigo;
+}
+#box10 {
+    background-color:dodgerblue;
+}
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -125,6 +196,46 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/* About Page */
+
+.about-page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-about {
+    border-bottom: 2px dashed black;
+}
+
+.top-about, .bottom-about {
+    margin: 2% auto;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-box {
+    width: 45%;
+    margin: 2% auto;
+    border-bottom: 2px dashed black;
+}
+
+.grid-box img {
+    width: 100%;
+    
+}
+
+.link-button{
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 1%
+}
+
+
+/* Footer Nav */
 
 footer {
     width: 100%;

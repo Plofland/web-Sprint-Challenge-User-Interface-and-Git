@@ -1,4 +1,4 @@
-/*CSS Reset*/
+CSS Reset
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -20,7 +20,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -53,23 +53,29 @@ table {
 /*Styling*/
 
 * {
-
+    border: 2px solid blue;
 }
 
 body {
-
+    
 }
 
 .container {
-
+    background-color: red;
 }
 
 #logo {
 
 }
 
-nav {
+.nav-bar {
+    display: flex;
+    
+}
 
+nav {
+    display: flex;
+    justify-content: end;
 }
 
 .link {
@@ -88,16 +94,39 @@ nav {
 
 }
 
-#box1 {}
-#box2 {}
-#box3 {}
-#box4 {}
-#box5 {}
-#box6 {}
-#box7 {}
-#box8 {}
-#box9 {}
-#box10 {}
+
+
+#box1 {
+    background-color: teal;
+}
+#box2 {
+    background-color: gold;
+}
+#box3 {
+    background-color:cadetblue;
+}
+#box4 {
+    background-color: coral;
+}
+#box5 {
+    background-color: crimson;
+}
+#box6 {
+    background-color: forestgreen;
+}
+#box7 {
+    background-color: darkorchid;
+}
+#box8 {
+    background-color: hotpink;
+}
+#box9 {
+    background-color: indigo;
+}
+#box10 {
+    background-color:dodgerblue;
+}
+
 
 .bottom-content {
 
@@ -108,5 +137,5 @@ nav {
 }
 
 footer nav {
-    
+
 }
