@@ -20,7 +20,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/* border: 0; */
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -54,15 +54,12 @@ table {
 /*Styling*/
 
 * {
-    box-sizing: border-box;
-    border: 2px solid blue;
-    
+    box-sizing: border-box; 
 }
 
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    
 }
 
 h1, h2, h3, h4, h5 {
@@ -80,30 +77,34 @@ p {
     margin: 0 auto;
 }
 
+
+/*Nav for Main/About Pages*/
+
 #logo {
-    width: 15%;
-    /* padding: 0 1% 2% 2%; */
+    width: 20%;
     margin: 2%;
 }
 
 .nav-bar {
     display: flex;
-    align-items: center;
     width: 100%;
-    
 }
 
 nav {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    width: 85%
+    align-items: flex-end;
+    width: 85%;
+    padding: 2% 0;
 }
 
 a {
     text-decoration: none;
     color: black;
 }
+
+
+/*Top Main Page*/
 
 #banner img{
     max-width: 100%;
@@ -127,8 +128,10 @@ a {
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
-    
 }
+
+
+/*Boxes Main Page*/
 
 .middle-content h2 {
     padding: 0 2%;
@@ -184,6 +187,8 @@ a {
 }
 
 
+/*Bottom Main Page*/
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -197,6 +202,7 @@ a {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
 
 /* About Page */
 
@@ -213,6 +219,9 @@ a {
     margin: 2% auto;
     padding: 0 2% 3% 2%;
 }
+
+
+/*Grid About Page*/
 
 .grid {
     display: flex;
@@ -245,7 +254,7 @@ a {
 }
 
 
-/* Footer Nav */
+/* Footer Nav for Main/About Pages*/
 
 footer {
     width: 100%;
